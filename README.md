@@ -72,5 +72,5 @@ We welcome contributions! 🚀
 
 ## 📬 Contact
 Need help or have suggestions? **Reach out to us!**
-📧 biswasa13198@gmail.com
+📧 biswasa13198@gmail.com or duttasrijoyee16@gmail.com
 

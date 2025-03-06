@@ -34,138 +34,9 @@ $element = isset($_POST['element']) ? mysqli_real_escape_string($con, $_POST['el
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="icon" type="image/x-icon" href="logo4.jpg">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        table {
-            border: 3px solid black;
-            border-collapse: collapse;
-            width: 95%;
-        }
-        td, th {
-            border: 1px solid black;
-            padding: 5px 10px;
-            font-size: 21px;
-            text-align: center;
-        }
-        th {
-            background-color: rgb(11, 148, 153);
-            color: white;
-        }
-        form {
-            margin-bottom: 20px;
-            margin-top: 2%;
-            font-size: 25px;
-        }
-        #navhome{
-            top: 0;
-            position: sticky;
-            height: 11vh;
-            display: flex;
-            background-color:rgb(11, 148, 153);
-            color: white;
-            align-items: center;
-            justify-content: space-between;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-        .material-symbols-outlined {
-        font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48
-        }
-        .btn-primary {
-            margin-left: 1%;
-            padding: 4px 15px;
-            border-radius: 5px;
-            background-color: rgb(11, 148, 153);
-            font-size: 17px;
-            font-weight: bolder;
-            cursor: pointer;
-            color: white;
-            font-family: Sitka;
-        }
-        .btn-primary:hover {
-            background-color: #fff;
-            color: rgb(11, 148, 153);
-            border-color: rgb(11, 148, 153);
-            transition: all 0.5s;
-        }
-        .btn-primary1 {
-            padding: 4px 15px;
-            border-radius: 5px;
-            background-color: rgb(11, 148, 153);
-            font-size: 17px;
-            font-weight: bolder;
-            cursor: pointer;
-            color: white;
-            font-family: Sitka;
-        }
-        .success-message, .error-message{
-            color: rgb(2, 155, 104);
-            font-size: 22px;
-            margin: 20px;
-            transition: opacity 1s ease-out;
-            opacity: 1;
-        }
-        .error-message{
-            color: red;
-        }
-        #action1{
-            height: 25px;
-            width: 55px;
-            font-size: 19px;
-            font-family: Sitka;
-            border-width: 1px;
-            border-color: black;
-            border-radius: 3px;
-        }
-        #action2{
-            height: 25px;
-            width: 75px;
-            font-size: 19px;
-            font-family: Sitka;
-            border-width: 1px;
-            border-color: black;
-            border-radius: 3px;
-        }
-        .order-option.hidden {
-            display: none;
-        }
-        .search-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    <link rel="icon" type="image/x-icon" href="../Images/logo4.jpg">
+    <link rel="stylesheet" href="../Css/Check.css"/>
 
-        #input1 {
-            height: 30px;
-            width: 280px;
-            border-radius: 5px;
-            text-align: center;
-            margin-right: 5px;
-        }
-
-        #searchlogo {
-            cursor: pointer;
-            border: 2px solid white;
-            border-radius: 4px;
-            padding: 2px;
-            background-color: rgb(11, 148, 153);
-            color: white;
-        }
-
-        #Userlogo{
-            cursor: pointer;
-            font-size: 35px;
-        }
-
-    </style>
     <script>
         // Function to hide the success message after 5 seconds
         function hideMessage() {
@@ -192,7 +63,7 @@ $element = isset($_POST['element']) ? mysqli_real_escape_string($con, $_POST['el
 
 <body style="background-image: none;" onload="hideMessage()">
     <nav id="navhome">
-        <img src="logo4.png" alt="Logo Unavailable" height="55px">
+        <img src="../Images/logo4.png" alt="Logo Unavailable" height="55px">
         <a href="homepage.php" style="text-decoration: none; color: white; font-family: Times New Roman; font-style: oblique; font-size: 25px; margin-left: -25%;">
             <h1>Microware</h1>
         </a>
