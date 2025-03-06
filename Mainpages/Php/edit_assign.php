@@ -82,156 +82,12 @@ mysqli_close($con);
 	  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Microware</title>
-    <link rel="icon" type="image/x-icon" href="logo4.jpg">
-    
-<style>
-      * {
-          margin: 0;
-          padding: 0;
-      }
-      body {
-        background-image: url("lab.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 100%;
-        backdrop-filter: blur(7px);
-      }
-      body::-webkit-scrollbar {
-        display: none;
-      }
-      #navhome {
-          top: 0;
-          position: sticky;
-          height: 11vh;
-          display: flex;
-          background-color: #6898FF;
-          color: white;
-          align-items: center;
-          justify-content: space-between;
-          padding-left: 20px;
-          padding-right: 20px;
-      }
-
-      #exampleInput {
-        border-width: 2px;
-        border-color: #3481FE;
-        font-size: 18px;
-        font-family: serif;
-      }
-
-      #categorySelect {
-        border-width: 2px;
-        border-color: #3481FE;
-        font-size: 19px;
-        padding-left: 20px;
-        font-family: serif;
-        color: rgb(97, 90, 90);
-        width: 100%;
-      }
-      .head {
-        text-align: center;
-        color: #034EEE;
-        font-family: serif;
-        font-size: 50px;
-        font-weight: bold;
-        margin-top: 1%;
-        text-shadow: 0 0 4px white;
-        margin-bottom: 0%;
-      }
-
-      .form-label {
-        color: #04517a;
-        font-weight: bold;
-        font-family: sitka text;
-        text-shadow: 0 0 2px white;
-        font-size: 35px;
-        display: flex;
-        align-items: center;
-      }
-      
-      .form-label1 {
-        color: #04517a;
-        font-weight: bold;
-        font-family: sitka text;
-        text-shadow: 0 0 2px white;
-        font-size: 35px;
-        display: flex;
-        align-items: center;
-        margin-top: -3.5%;
-      }
-
-      .material-symbols-outlined {
-        font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48
-      }
-
-      .form-group {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          margin-bottom: 20px;
-      }
-
-      #Userlogo {
-        cursor: pointer;
-        font-size: 35px;
-      }
-
-      #searchlogo {
-        cursor: pointer;
-        border: 2px solid white;
-        border-radius: 4px;
-      }
-
-      .form-control {
-          height: 40px;
-          flex: 1;
-      }
-
-      .btn-primary {
-        color: #034EEE;
-        font-family: serif;
-        font-weight: bold;
-        margin-top: 3%;
-        text-align: center;
-        font-size: 25px;
-        height: 50px;
-        width: 150px;
-        border: 2px solid #3481FE;
-        border-radius: 8px;
-      }
-      .btn-primary:hover {
-        background-color: #04517a;
-        color: white;
-        border: 2px solid white;
-        border-radius: 8px;
-      }
-      #valueInput, #unitInput{
-        width: 25%; 
-        border-width: 2px;
-        border-color: #3481FE;
-        font-size: 18px;
-        padding-left: 20px;
-        font-family: serif;
-        color: rgb(97, 90, 90);
-    }
-    #receiverInput, #labInput, #assignDate, #returnDate, #categoryInput{
-        border-width: 2px;
-        border-color: #3481FE;
-        font-size: 18px;
-        padding-left: 20px;
-        font-family: serif;
-        color: rgb(97, 90, 90);
-    }
-    </style>
+    <link rel="icon" type="image/x-icon" href="../Images/logo4.jpg">
+    <link rel="stylesheet" href="../Css/assign_element.css">
 </head>
 <body>
 	<nav id="navhome">
-      <img src="logo4.png" alt="Unavailable" height="55px">
+      <img src="../Images/logo4.png" alt="Unavailable" height="55px">
       <a href="homepage.php" style="text-decoration: none; color: white; font-family: Times New Roman; font-size: 25px; font-style: oblique; margin-left: -75%"><h1 style="font-weight: bolder;">Microware</h1></a>
     <span id="Userlogo" class="material-symbols-outlined">account_circle</span>
     </nav>
@@ -252,7 +108,7 @@ mysqli_close($con);
         </div>
         <div class="mb-3">
             <label for="exampleInput" class="form-label" style="text-shadow: 2px 2px #3498db;">Category:</label>
-            <input type="text" class="form-control" placeholder="<?php echo htmlspecialchars($Category); ?>" id="categoryInput" aria-describedby="emailHelp" Disabled>
+            <input type="text" class="form-control" placeholder="<?php echo htmlspecialchars($Category); ?>" id="categoryInput1" aria-describedby="emailHelp" Disabled>
         </div>
         <div class="mb-3">
           <label for="exampleInput" class="form-label" style="text-shadow: 2px 2px #3498db;">Receiver:</label>

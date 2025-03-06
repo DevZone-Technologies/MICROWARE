@@ -1,5 +1,5 @@
 <?php
-    $con=mysqli_connect("localhost","root","","BookVerse");
+    $con=mysqli_connect("localhost","root","","microwaredb");
     session_start();
     if(isset($_SESSION['username1'])) {
         $username1 = $_SESSION['username1'];
@@ -19,89 +19,9 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="icon" type="image/x-icon" href="logo4.jpg">
+    <link rel="icon" type="image/x-icon" href="../Images/logo4.jpg">
+    <link rel="stylesheet" href="../Css/homepage.css">
     <title>Microware</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        #navhome{
-            top: 0;
-            position: sticky;
-            height: 11vh;
-            display: flex;
-            background-color:rgb(11, 148, 153);
-            color: white;
-            align-items: center;
-            justify-content: space-between;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-        .material-symbols-outlined {
-        font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48
-        }
-        .from1{
-            display: flex;
-        justify-content: space-around;
-        }
-        #Userlogo{
-            cursor: pointer;
-            font-size: 35px;
-        }
-        .d{
-        height: 110vh;
-        background-color: blanchedalmond;
-        color: black;
-        }
-        body {
-            background-image: url("Background.jpg");
-            background-repeat: no-repeat;
-            background-position: center 38%;
-            background-size: cover;
-            overflow: hidden; 
-        }
-        
-        body::-webkit-scrollbar {
-        display: none;
-        }
-        .btn{
-        margin-top: 19%;
-        margin-left: 8%;
-        padding: 15px;
-        border-radius: 15px;
-        background-color: rgb(11, 148, 153);
-        font-size: 38px;
-        font-weight: bolder;
-        font-family: 'Times New Roman', Times, serif;
-        cursor: pointer;
-        color: white;
-        border-color:white;
-        box-shadow: 0 0 2px 2px rgb(99, 98, 98);
-        text-decoration: none;
-        }
-        .btn:hover{
-        background-color: #fff;
-        color:  rgb(11, 148, 153);
-        border-color:  rgb(11, 148, 153);
-        transition: all 0.5s;
-        }
-        .success-message {
-            position: absolute; /* Keeps the element out of the normal flow */
-            top: 2%; /* Adjust as needed */
-            left: 45%; /* Adjust as needed */
-            visibility: visible; /* Default visibility */
-            color: white;
-            font-size: 23px;
-            margin: 20px;
-            transition: opacity 1s ease-out;
-            opacity: 1;
-        }
-    </style>
     <script>
         // Function to hide the success message after 5 seconds
         function hideMessage() {
@@ -126,7 +46,7 @@
 </head>
 <body onload="hideMessage()">
     <nav id="navhome">
-      <img src="logo4.png" alt="Unavailable" height="55px">
+      <img src="../Images/logo4.png" alt="Unavailable" height="55px">
         <a style="text-decoration: none; color: white; font-family: Times New Roman; font-size: 25px; font-style: oblique; margin-left: -37%"><h1>Microware</h1></a>
         <center><div id="successMessage" class="success-message"><?php if (isset($_GET['success']) && $_GET['success'] == 1): ?>Login Successful!!<?php endif; ?></div></center>
         <span id="Userlogo" class="material-symbols-outlined">account_circle</span>

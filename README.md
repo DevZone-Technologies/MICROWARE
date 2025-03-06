@@ -1,4 +1,4 @@
-# 🚀 **Microware** - A Microbiology Laboratory Inventory Management Solution
+# 🔬 **Microware** - A Microbiology Laboratory Inventory Management Solution
 
 **Revolutionizing Lab Management!**
 Microware is a digital companion for managing microbiology labs with efficiency and precision. No more messy paperwork or lost records—Microware streamlines inventory tracking, equipment management, and data organization, ensuring that your lab operates with maximum productivity and accuracy. Whether you're a small research facility or a large-scale microbiology lab, Microware adapts to your needs and grows with you!
@@ -72,5 +72,5 @@ We welcome contributions! 🚀
 
 ## 📬 Contact
 Need help or have suggestions? **Reach out to us!**
-📧 biswasa13198@gmail.com
+📧 biswasa13198@gmail.com or duttasrijoyee16@gmail.com
 

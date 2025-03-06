@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+  background-image: url("../Images/lab.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  backdrop-filter: blur(7px);
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+#navhome{
+    top: 0;
+    position: sticky;
+    height: 11vh;
+    display: flex;
+    background-color: #6898FF ;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#exampleInput{
+  border-width: 2px;
+  border-color: #3481FE;
+  font-size: 18px;
+  font-family: serif;
+  width: 100%;
+}
+
+#categorySelect{
+  border-width: 2px;
+  border-color: #3481FE;
+  height: 7%;
+  width: 100%;
+  font-size: 19px;
+  padding-left: 20px;
+  font-family: serif;
+  color: rgb(97, 90, 90);
+}
+.head{
+  text-align: center;
+  color: #034EEE ;
+  font-family: serif;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 1%;
+  text-shadow: 0 0 4px white;
+  margin-bottom: 0%;
+}
+
+.form-label{
+  color: #04517a;
+  font-weight: bold;
+  font-family: sitka text;
+  margin-top: 0.2%;
+  text-align: center;
+  text-shadow: 0 0 2px white;
+  font-size: 35px;
+}
+.form-label1{
+  color: #04517a;
+  font-weight: bold;
+  font-family: sitka text;
+  margin-top: -1.5%;
+  text-align: center;
+  text-shadow: 0 0 2px white;
+  font-size: 35px;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.from1{
+    display: flex;
+    justify-content: space-around;
+}
+#Userlogo{
+            cursor: pointer;
+            font-size: 35px;
+        }
+#searchlogo{
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.form-control{
+    height: 6%;
+    width: 18%;
+}
+.btn-primary{
+  color: #034EEE ;
+  font-family: serif;
+  font-weight: bold;
+  margin-top: 3%;
+  text-align: center;
+  font-size: 25px;
+  height: 7%;
+  width: 10%;
+  border: 2px solid #3481FE;
+  border-radius: 8px;
+}
+.btn-primary:hover{
+  background-color: #04517a;
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+#valueInput,#unitInput,#categoryInput{
+    border-width: 2px;
+    border-color: #3481FE;
+    font-size: 18px;
+    padding-left: 20px;
+    font-family: serif;
+    color: rgb(97, 90, 90);
+    width: 25%;
+}
